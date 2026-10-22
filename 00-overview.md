@@ -42,17 +42,6 @@ RoboShop Microservices is a cloud-native e-commerce application for robotics com
 | Server 12 | t3.small  | Standard_B1ms  | RHEL 10 | Orders Service        |
 | Server 13 | t3.small  | Standard_B1ms  | RHEL 10 | Ratings Service       |
 
-## Prerequisites
-
-Before setting up any component, disable SELinux and the firewall on all servers:
-
-```shell
-setenforce 0
-systemctl stop firewalld
-systemctl disable firewalld
-```
-
-> **Note** In production, configure SELinux policies and firewall rules properly instead of disabling them.
 
 ## Setup Order
 
